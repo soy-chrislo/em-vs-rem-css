@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.contenedor {
+  background-color: #550a46;
+  color: #fff;
+  width: 90%;
+  /* * El contenedor se agrandará en función de su `font-size`*/
+  max-width: 50em;
+  /* * Si se desea que el tamaño de los margenes sea proporcional, es opcional. */
+  margin: 1.875em auto;
+  padding: 1.875em;
+  border-radius: 10px;
+  /* * En lugar de 16px puede utilizarse `1em` y hereda `font-size` de su contenedor que es `<body>`. */
+  font-size: 16px;
+}
+
+.contenedor h1 {
+  color: #f8b400;
+  margin-top: 0px;
+  /* * rem toma el `font-size` de <body> y no de .contenedor.
+  */
+  margin-bottom: 1.25rem;
+  font-family: 'Merriweather', serif;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.contenedor p {
+  line-height: 200%;
+  margin-bottom: 1.25em;
+  /* * Cuando cambie el `font-size` del contenedor, este también cambiará */
+  font-size: 1em;
+}
+
+.contenedor button {
+  font-size: 1em;
+  display: inline-block;
+  padding: 0.625em 1.25em;
+  font-family: inherit;
+  border: none;
+  /* ? Investigar esta propiedad */
+  cursor: pointer;
+  background: #617be3;
+  color: #fff;
+  border-radius: 100px;
+
+}
